@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Maliye</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graygreen: "#4A7973",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <div class="select-none">
+    <nav id="Home" class="w-full flex items-center justify-between py-3 px-5 fixed backdrop-blur-sm bg-white/80 z-50">
+      <a href="" class="flex items-center">
+        <img src="./img/terminal.png" alt="logo" width="30px" />
+        <div class="flex flex-col items-center ml-2">
+          <p class="text-lg text-graygreen font-bold italic">Yash Maliye</p>
+          <p class="text-xs font-normal">Software Engineer</p>
+        </div>
+      </a>
+      <ul class="flex w-2/6 justify-evenly font-medium">
+        <li><a href="#">Home</a></li>
+        <li><a href="#AboutMe">About Me</a></li>
+        <li><a href="#Skill">Skill</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#Resume/CV">Resume/CV</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="AboutMe">
+      <div class="static w-full">
+        <img class="bg-cover bg-center h-screen w-full" src="./img/slide1.webp" alt="" />
+        <div class="absolute inset-y-1/2 w-full">
+          <h4 class="selfDes text-center text-white text-6xl font-semibold">
+            Hi, I am
+          </h4>
+          <br />
+          <h2 class="selfDes text-center text-white text-6xl font-semibold">
+            Yash Maliye
+          </h2>
+          <h5 class="selfDes text-center text-white text-3xl mt-4 font-medium">
+            Web Developer
+          </h5>
+        </div>
+        <img class="animate-bounce absolute bottom-0 inset-x-1/2" src="./img/down.png" alt="" width="20" />
+      </div>
+    </section>
+    <section id="Skill">
+      <div class="bg-gray-100 lg:p-16 p-10">
+        <div class="flex items-baseline justify-center">
+          <h3 class="mr-2 font-bold text-2xl text-graygreen">My Skills</h3>
+          <hr class="lg:w-9/12 w-3/5 border border-black" />
+        </div>
+        <ul class="flex flex-wrap justify-center p-3 mt-5">
+          <li class="lg:w-3/12 w-full flex items-center justify-center my-5">
+            <img src="./img/html.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">HTML</p>
+          </li>
+          <li class="lg:w-3/12 w-full  flex items-center justify-center my-5">
+            <img src="./img/css-3.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">CSS</p>
+          </li>
+          <li class="lg:w-3/12 w-full  flex items-center justify-center my-5">
+            <img src="./img/tailwind.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">Tailwind</p>
+          </li>
+          <li class="lg:w-3/12 w-full  flex items-center justify-center my-5">
+            <img src="./img/bootstrap.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">Bootstrap</p>
+          </li>
+          <li class="lg:w-3/12 w-full  flex items-center justify-center my-5">
+            <img src="./img/js.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">JavaScript</p>
+          </li>
+          <li class="lg:w-3/12 w-full  flex items-center justify-center my-5">
+            <img src="./img/atom.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">React Js</p>
+          </li>
+          <li class="lg:w-3/12 w-full  flex items-center justify-center my-5">
+            <img src="./img/github.png" alt="" width="50px" />
+            <p class="font-semibold text-lg ml-3">GitHub</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="Project">
+      <div class="flex lg:flex-row flex-col items-center justify-evenly lg:p-16 p-10">
+        <div class="left lg:w-2/5 w-full">
+          <h3 class="font-bold text-2xl text-graygreen">Project</h3>
+          <br />
+          <h2 class="selfDes lg:text-xl text-lg font-bold text-black mb-1">
+            BitByte a CryptoCurreny -
+          </h2>
+          <p class="font-normal">
+            Built with ReactJS, our cryptocurrency project offers a dynamic
+            and user-friendly interface for tracking cryptocurrency prices,
+            trends, and market data. Users can explore a range of
+            cryptocurrencies, view detailed charts. With seamless API
+            integration and React components and state management, our project
+            delivers an immersive experience cryptocurrency enthusiasts
+          </p>
+        </div>
+        <div class="right flex flex-col items-center lg:w-2/4 w-full lg:mt-0 mt-7">
+          <img class="border border-black drop-shadow-lg" src="./img/project.PNG" alt="" width="80%" />
+          <div class="flex lg:w-2/5 w-full justify-evenly mt-3">
+            <a class="flex items-center hover:text-blue-500" href="#"><img src="./img/play-button.png" alt=""
+                width="12" />
+              <h4 class="ml-1 font-semibold">Live Demo</h4>
+            </a>
+            <a class="flex items-center hover:text-pink-500" href="https://github.com/Y2a0214/CryptoCurrency"
+              target="_blank"><img src="./img/github.png" alt="" width="17" /><span class="ml-1 font-semibold">Source
+                Code</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Resume/CV">
+      <div class="lg:p-16 p-10 bg-gray-100">
+        <div class="flex items-baseline justify-center">
+          <h3 class="mr-2 font-bold text-2xl text-graygreen">Resume/CV</h3>
+          <hr class="lg:w-9/12 w-3/5 border border-black" />
+        </div>
+        <div class="mt-8">
+          <p class="selfDes font-semibold text-lg text-center">
+            - You Can Know More about by Clicking below Button -
+          </p>
+          <a class="flex justify-center" href="./img/Resume Yash (1).pdf">
+            <div
+              class="flex border border-gray-300 rounded px-5 py-2 items-center mt-6 hover:bg-graygreen hover:text-white">
+              <img src="./img/pdf.png" alt="" width="22" />
+              <span class="font-semibold text-lg ml-1">Resume/CV</span>
+            </div>
+            <div class="flex lg:flex-row flex-col justify-center mt-8">
+              <div class="border border-gray-300 flex items-center justify-center py-1 px-3 rounded-lg  lg:mr-2  hover:bg-white lg:mt-0 mt-2">
+                <a href="https://www.linkedin.com/in/yashmaliye/"><img src="./img/linkedin.png" alt="" width="20"></a> 
+                <span class="ml-1">LinkedIn</span>
+              </div>
+              <div class="border border-gray-300 flex items-center justify-center py-1 px-3 rounded-lg lg:mr-2 hover:bg-white lg:mt-0 mt-2">
+                <a href="https://github.com/Y2a0214"><img src="./img/github.png" alt="" width="20"></a>
+                <span class="ml-1">GitHub</span>
+              </div>
+              <div class="border border-gray-300 flex items-center justify-center py-1 px-3 rounded-lg lg:mr-2 hover:bg-white lg:mt-0 mt-2">
+                <img src="./img/instagram.png" alt="" width="20">
+                <span class="ml-1">Instagram</span>
+              </div>   
+              <div class="border border-gray-300 flex items-center justify-center py-1 px-3 rounded-lg hover:bg-white lg:mt-0 mt-2">
+                <img src="./img/twitter.png" alt="" width="20">
+                <span class="ml-1">Twitter</span>
+              </div>            
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="p-16">
+        <form class="max-w-sm mx-auto border border-gray-300 p-7 rounded-lg" action=" mailto:yashmaliye80@gmail.com"
+              method="post" enctype="text/plain"">
+          <div class=" mb-5">
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
+              <input type="name" id="name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="eg.jhon son" required />
+          </div>
+          <div class="mb-5">
+            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Subject</label>
+            <input type="subject" id="subject" placeholder="eg.inquire"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required />
+          </div>
+          <div class="mb-5">
+            <label for="Comment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comment</label>
+            <textarea
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Comment"></textarea>
+          </div>
+          <div class="flex">
+            <button type="submit" value="Send"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-2">
+              Send
+            </button>
+            <button type="reset" value="Reset"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ml-2">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="w-full flex items-center justify-center py-3 px-5 border border-t-1">
+        <div class="flex items-center mr-3">
+          <span class="mr-1 font-semibold">Made with Love</span>
+          <img src="./img/heart.png" alt="" width="19">
+        </div>
+        <div class="flex items-center">
+          <span class="mr-1 font-semibold">Copy Right</span>
+          <img src="./img/copyright.png" alt="" width="15">
+          <span class="ml-1 font-semibold">Reserve</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
